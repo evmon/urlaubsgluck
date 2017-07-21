@@ -1,0 +1,86 @@
+//__________________________функции для события по клику
+// rightArrow.addEventListener('click', nextSlide);
+// leftArrow.addEventListener('click', previousSlide);
+// function nextSlide () {
+// 	var image = document.getElementById('image');
+// 	minImg++;
+// 	if(minImg > maxImg)
+// 		minImg = 1;
+// 	image.setAttribute('src', 'img/' + minImg + '.jpg');
+// };
+
+// function previousSlide () {
+// 	var image = document.getElementById('image');
+// 	minImg--;
+// 	if(minImg == 0)
+// 		minImg = maxImg;
+// 	image.setAttribute('src', 'img/' + minImg + '.jpg');
+// };
+//__________________________________________
+//_____//переменные для события по клику
+ 	//rightArrow = document.getElementById('rightArrow'),
+	//leftArrow = document.getElementById('leftArrow'),
+
+// 	var minImg = 1,
+// 		maxImg = 3;
+// 	//переменные для события по таймеру
+// 	var startPosFirst = 0,
+// 		startPosSecond = 300,
+// 		imgNumSecond = minImg + 1,
+// 		image = document.getElementById('image'),
+// 		imageSecond = document.getElementById('imageSecond');
+		
+// 		image.setAttribute('src', 'img/' + minImg + '.jpg');
+
+// 		imageSecond.setAttribute('src', 'img/' + imgNumSecond + '.jpg');
+
+// 		image.style.left = startPosFirst + 'px';
+// 		imageSecond.style.left = startPosSecond + 'px';
+
+// //функции для события по таймеру
+// 	function move () {
+
+// 		var stopInterval = setInterval(function () {
+// 			if(startPosFirst<=290 && startPosSecond <=10)
+// 			{
+// 				clearInterval(stopInterval);
+// 			}
+// 		startPosFirst -=10;
+// 		startPosSecond -=10;
+// 		image.style.left = startPosFirst + 'px';
+// 		imageSecond.style.left = startPosSecond + 'px';
+// 		imageSecond.setAttribute('id', 'image');
+// 	}, 10);
+// }
+
+// function change (){
+		
+// 		imgNumSecond = imgNumSecond % maxImg + 1;
+// 	var tempImg = document.createElement('img');
+// 		tempImg.setAttribute('src', 'img/' + imgNumSecond + '.jpg');
+// 		// startPosFirst = 0;
+// 		startPosSecond = 300;
+// 		tempImg.style.left = startPosSecond + 'px';
+// 		tempImg.style.position = 'absolute' ;//для следующего элемента 
+// 		//устанавливаем позиционирование
+		
+// 		view.appendChild(tempImg);
+		
+// 		imageSecond.setAttribute('id', 'image');//вторая картинка становится первой
+// 		tempImg.setAttribute('id', 'imageSecond');
+// 		image.remove();//удаляем 1 картинку
+		
+
+// }
+// // move();
+// // change();
+//     function moveSlide(){
+
+// 		setInterval(function (){
+// 			move();
+// 			setTimeout(function(){ 
+// 				change();
+// 			}, 1000);
+// 		}, 3000);
+// 	}
+// 	moveSlide();
